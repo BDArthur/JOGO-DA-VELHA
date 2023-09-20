@@ -1,0 +1,122 @@
+body {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(114, 202, 42);
+}
+
+h1 {
+    font-size: 45px;
+    color: rgb(0, 0, 0);     
+}
+
+/*BOTÕES*/
+#buttons-container {
+    margin-bottom: 20px;
+}
+
+#buttons-container button{
+    border: none;
+    border-radius: 20px;
+    padding: 12px 25px;
+    margin: 0 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+/* Jogo */
+#container {
+    width: 300px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* CENTRALIZAR UMA DIV */
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.box {
+    border: 8px solid rgb(0, 0, 0);
+    height: 100px;
+    box-sizing: border-box;
+    flex: 1 1 33%;
+    border-top: none;
+    border-right: none;
+}
+
+#block-1, #block-2, #block-3 {
+    border-top: none;
+}
+
+#block-1, #block-4, #block-7 {
+    border-left: none;
+}
+
+#block-7, #block-8, #block-9 {
+    border-bottom: none;
+}
+
+/* SÍMBOLOS */
+
+.x {
+    font-size: 65px;
+    color: red;
+}
+
+.o {
+    width: 50px;
+    height: 50px;
+    border: 5px solid blue;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* PLACAR */
+
+#scoreboard-container {
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 25px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#x-scoreboard {
+    color: red;
+    margin-right: 3px;
+}
+
+#o-scoreboard {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+#score-box {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+#message p{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 150px;
+    left: 0;
+    right: 0;
+    width: 500px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.hide {
+    display: none !important;
+}
+
